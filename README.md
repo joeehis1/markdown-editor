@@ -35,15 +35,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Dark Mode Menu Open](./screenshots/Desktop-dark-1.png)
+![Mobile Menu Open](./screenshots/Mobile-2.png)
+![Light Mode Delete Confirm](./screenshots/Mobile-light-4.png)
+![Tablet Editor Open](./screenshots/Tablet-dark-2.png)
+.[](./screenshots/Tablet-light-2.png)
 
 ### Links
 
@@ -52,7 +48,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-In summary, I started by getting the general skeleton of the project put together without a lot of functionality and then putting in the functionality bit by bit. The more challenging aspect was getting the delete functionality to work properly.
+In summary, I started by getting the general skeleton of the project put together without a lot of functionality and then putting in the functionality bit by bit. The more challenging aspect was getting the delete functionality to work properly and also deciding on how to structure local storage persistence.
 
 ### Built with
 
@@ -231,16 +227,14 @@ $preview-sizes: (
 
 ### Continued development
 
-I have some ways to go in learning redux. I also intend to pick up typescript. I don't particularly enjoy the idea of picking up a language simply because everyone seems to say one thing or the other about it, in the case of typescript, its useful in keeping your software bug free(that's why console.literally-anything exists). But at some point no one will be writing plain JS anymore so this is one of the few times I will have to give in to peer pressure and learn it so I can try using it for my next FEM challenge. I also intend on picking up server side programming using PHP so that I will eventually be able to build out these projects as full stack applications. Long road ahead.
+I have some ways to go in learning redux. I also intend to pick up typescript. I also intend on picking up server side programming using PHP so that I will eventually be able to build out these projects as full stack applications. Long road ahead.
 
 ### Useful resources
 
--   [Dave Gray, Redux Tutorial](https://www.youtube.com/watch?v=NqzdVN2tyvQ&t=965s) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+-   [Dave Gray, Redux Tutorial](https://www.youtube.com/watch?v=NqzdVN2tyvQ&t=965s) - This is more or less the video version of the redux documentation without the complicated mental leaps you'll have to take. I'd recommend it to anyone that is just getting started with redux to read the documentation while working through the video.
+-   [Tania Rascia](https://www.taniarascia.com/redux-react-guide/) - I'd recommend you bookmark her entire website. It is basically an education in everything web development. Without her site, I most certainly would have abandoned redux as a whole.
 
 ## Author
 
--   Website - [Add your name here](https://www.your-site.com)
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
--   Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+-   Website - [Joseph Ehigiator](https://benevolent-torte-3514dd.netlify.app/#)
+-   Frontend Mentor - [@joeehis1](https://www.frontendmentor.io/profile/joeehis1)
