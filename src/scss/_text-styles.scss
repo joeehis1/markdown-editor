@@ -1,0 +1,46 @@
+@use './variables' as *;
+
+
+
+$app-sizes: "heading-m" 0.9375rem 400, "heading-s" 0.875rem 500, "body-s" 0.8125rem 300, "body-m" 0.8125rem 300;
+
+$preview-sizes : ("1": 2rem, "2": 1.75rem, "3": 1.5rem, "4": 1.25rem, "5": 1rem, "6": 0.875);
+
+
+
+@each $name, $size, $weight in $app-sizes{
+    .app-#{$name}{
+        font-size: $size;
+        font-weight: $weight;
+        @if $name == "heading-s" {
+            letter-spacing: 0.125rem;
+        }@else{
+            letter-spacing: normal;
+        }
+    }
+}
+
+@each $level, $size in $preview-sizes{
+    .preview-heading-#{$level}{
+        font-size: $size;
+        @if $level == "6"{
+            color: $accent;
+        } @else{
+            color: $black-700;
+        }
+        font-weight: 700;
+    }
+}
+
+
+
+.markdown-code{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+.content{
+    font-size: 0.875rem;
+    font-weight: 400;
+}

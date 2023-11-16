@@ -1,0 +1,129 @@
+@use '../variables' as *;
+
+
+.btn{
+    cursor: pointer;
+    border: none;
+    color: $white;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    &.btn-icon{
+        padding: 0.5rem;
+        img{
+            height: 1.125rem;
+            aspect-ratio: 1;
+        }
+    }
+
+    
+
+    &.btn-accent{
+        background-color: $accent;
+        
+
+        &:hover{
+            background-color: $accent-hovered;
+        }
+    }
+
+    &.btn-full-width{
+        width: 100%;
+        padding: 0.75rem 2.69rem;
+        text-align: center;
+    }
+
+    &.btn-transparent{
+        background-color: transparent;
+        
+    }
+}
+
+
+// located on the nav menu for saving new documents
+
+.btn-select{
+    display: grid;
+    width: 100%;
+    margin-block: 1.5rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: start;
+    text-align: left;
+    justify-content: start;
+    column-gap: 1.02rem;
+    padding: 0; 
+    grid-template-areas: 
+    "icon created-at"
+    "icon title";
+    *{
+        margin: 0;
+        margin-block: 0.3rem;
+    }
+
+    .icon{
+        grid-area: icon;
+        align-self: center;
+    }
+    .created-at{
+        grid-area: created-at;
+        justify-self: start;
+        color: $black-500;
+    }
+    .title{
+        grid-area: title;
+    }
+}
+
+.btn-menu{
+    margin-block: calc(-1 * $header-padding);
+}
+
+
+.btn-delete {
+    margin-left: auto;
+}
+
+.btn-dark-light{
+    background-color: $black-600;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    min-height: 1.5rem;
+    min-width: 3rem;
+    justify-content: flex-end;
+    &.light{
+        justify-content: flex-start;
+    }
+    .circle{
+        background-color: $white;
+        min-height: 0.75rem;
+        border-radius: 50%;
+        aspect-ratio: 1;
+    }
+}
+
+.btn-save {
+
+    .button-text {
+        display: none;
+
+        @media (min-width: $breakpoint-mobile) {
+            display: initial;
+            gap: 0.5rem;
+        }
+    }
+        @media (min-width: $breakpoint-mobile) {
+            gap: 0.5rem;
+        }
+
+}
+
+
+
+.btn-preview{
+    padding: 0 !important;
+    margin: 0 !important;
+}

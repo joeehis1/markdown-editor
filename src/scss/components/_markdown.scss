@@ -1,0 +1,59 @@
+@use '../variables' as *;
+
+.preview{
+    
+    color: $black-500;
+    
+    .content{
+        font-family: $ff-preview;
+
+        h1,h2,h3,h4,h5{
+            color: $black-700;
+        }
+
+        ul li{
+            &::marker{
+                color: $accent;
+            }
+        }
+
+        blockquote, pre{
+            background-color: $black-200;
+            border-radius: 0.25rem;
+            padding: 1.5rem;
+        }
+
+        a{
+            color: inherit;
+            font-size: inherit;
+        }
+
+        blockquote{
+            margin: 0;
+            border-left: 0.5rem solid $accent;
+            font-weight: 700;
+        }
+        code{
+            font-weight: 400;
+            font-family: $ff-editor;
+        }
+
+    }
+
+    &.dark-mode {
+        color: $black-400;
+        .content{
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                color: $white;
+            }
+            blockquote, pre{
+                color: $white;
+                background-color: $black-800;
+            }
+        }
+    }
+}

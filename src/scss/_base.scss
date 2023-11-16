@@ -1,0 +1,54 @@
+@use './variables' as *;
+
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    transition: background-color 350ms ease-in, 
+                color 350ms ease-in;
+}
+
+
+
+
+img{
+    display: inline-block;
+    max-width: 100%;
+    height:auto;
+}
+
+body {
+    background-color: $white;
+    margin: 0;
+    font-family: $ff-regular;
+
+    @media (prefers-color-scheme: light) {
+        background-color: $black-1000;
+    }
+}
+
+
+textarea{
+    resize: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus, &:focus-visible, &:focus-within, &:active{
+        border-radius: 0;
+    };
+    overflow: auto;
+    font-family: $ff-editor;
+    color: currentColor;
+    
+    &::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+        display: none;
+    }
+}
+
+.unstyled-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

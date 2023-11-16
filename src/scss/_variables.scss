@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+$black-1000: #151619;
+$black-900: #1D1F22;
+$black-800: #2B2D31;
+$black-700: #35393F;
+
+$black-600: #5A6069;
+$black-500: #7C8187;
+$black-400:#C1C4CB;
+
+
+$black-300: #E4E4E4;
+$black-200: #F5F5F5;
+$white: #FFFFFF;
+
+$accent: #E46643;
+$accent-hovered: #F39765;
+
+$ff-regular: 'Roboto', sans-serif;
+
+$ff-editor: 'Roboto Mono',monospace;
+$fw-editor: 400;
+$fs-editor-input: 0.875rem;
+
+$ff-preview: 'Roboto Slab', serif;
+$fw-preview-heading-bold: 700;
+$fw-preview-heading-light: 300;
+
+
+$breakpoint-mobile: 28rem;
+$breakpoint-tablet:73.06rem;
+
+//Useful dimensions.
+
+$nav-width: 17rem;
+$header-padding: 0.5rem;

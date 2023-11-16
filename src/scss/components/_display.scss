@@ -1,0 +1,141 @@
+@use '../variables' as *;
+
+
+main{
+    overflow: hidden;
+}
+
+
+//Layout
+
+.shown-if-empty {
+    background-color: $black-200;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    &.nav-shown {
+        margin-left: $nav-width;
+    }
+    &.dark-mode {
+        background-color: $black-600;
+        color: $black-400;
+    }
+
+    h2 {
+        margin: 0
+    }
+}
+
+.display{
+    width: 100%;
+    &.nav-shown{
+        margin-left: $nav-width;
+    }
+    
+    .heading {
+        color: $black-500;
+        background-color: $black-200;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem;
+        margin: 0;
+        &.dark-mode{
+            background-color: $black-900;
+            color: $black-400;
+        }
+    }
+
+    .shown-items{
+        // width: inherit;
+        padding: 1rem;
+        min-height: 100vh;
+
+        
+
+
+        .editor{
+            
+            min-height: inherit;
+            textarea{
+                width: 100%;
+                min-height: inherit;
+                background-color: transparent;
+                color: $black-700;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+            &.hidden{
+                display: none;
+            }
+
+            &.dark-mode{
+                textarea{
+                    color: $black-400;
+                }
+            }
+
+        }
+        .preview{
+            // Color styles for preview shown in _markdown.scss
+            display: none;
+            &.visible{
+                display: block;
+            }
+        }
+        
+        @media (min-width : $breakpoint-mobile) {
+            
+            padding: 0;
+            display: flex;
+            
+            .editor {
+                display: block;
+                width: 50%;
+                min-height: 100vh;
+                textarea{
+                    min-height: 100vh;
+                    padding: 0.56rem 1rem;
+                }
+            }
+            
+            .preview {
+                border-left: 1px solid $black-300;
+                min-height: inherit;
+                width: 50%;
+                display: block;
+                .content{
+                    min-height: inherit;
+                    padding: 1.38rem 1.5rem;
+                }
+            }
+
+            &.preview-visible {
+                // This is only active above media breakpoint. This breakpoint is being checked with javascript
+                display: block;
+
+                .editor {
+                    display: none;
+                }
+
+                .preview {
+                    border: none;
+                    width: 100%;
+                }
+
+                .content {
+                    width: 80%;
+                    max-width: 42rem;
+                    margin: 0 auto;
+                }
+
+            }
+            
+        }
+    }
+}
+

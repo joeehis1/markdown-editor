@@ -1,0 +1,144 @@
+
+@use '../variables' as *;
+
+header{
+    background-color: $black-800;
+    color: $white;
+    
+    padding: $header-padding;
+    padding-inline-start: 0;
+    overflow: hidden;
+    *{
+        font-family: inherit;
+    }
+    .controls{
+        display: flex;
+        
+    }
+    &.logo-in-header{
+        .logo{
+            align-self: center;
+            margin-left: 1.5rem;
+        }
+    }
+    &.nav-shown{
+        .controls{
+            transform: translateX($nav-width);
+        }
+        // When the menu button is clicked the controls section moves by an amount which is equal to the width of the header and also the overflow of the header is set to hidden. 
+        
+    }
+}
+
+.doc-title{
+    align-self: center;
+    margin-left: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "icon label";
+    column-gap: 1.02rem;
+
+    @media (min-width: $breakpoint-mobile) {
+        grid-template-areas: 
+        "icon title"
+        "icon label";
+    }
+    
+    h3{
+        display: none;
+
+        @media (min-width: $breakpoint-mobile) {
+            display: initial;
+            color: $black-500;
+            grid-area: title;
+            margin: 0;
+        }
+    }
+
+    img{
+        grid-area: icon;
+        align-self: center;
+    }
+    label{
+        grid-area: label;
+        cursor: text;
+        
+    }
+    input{
+       background-color: transparent;
+       color: inherit; 
+       border: none;
+       outline: none;
+       border-bottom: 1px solid;
+       caret-color: $accent;
+    }
+    
+}
+
+.doc-name-editor{
+    display: flex;
+    width: 100%;
+    // Setting this as the width of the form element allows the form to take up the remaining space of the header element and will allow the delete button to have its margin-left as auto
+}
+
+.docs-nav{
+    background-color: $black-900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: $nav-width;
+    transform: translateX(calc(-1 * $nav-width));
+    min-height: 100vh;
+    color: $black-500;
+    padding: 1.69rem 1.5rem;
+
+    .nav-title{
+        text-transform: uppercase;
+    }
+
+    &.nav-shown{
+        transform: translateX(0);
+        // display: initial;
+    }
+}
+
+.color-mode-toggle{
+
+    display: flex;
+    align-items: center;
+    gap: 0.72rem;
+    margin-block-start: auto;
+}
+
+.dialog-delete{
+    width: 100%;
+    max-width: 21.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0;
+    font-family: $ff-preview;
+    &::backdrop {
+        background-color: $black-1000;
+        opacity: 0.5;
+    }
+
+    .dialog-elements{
+        padding: 1.5rem;
+    }
+
+    &.dark-mode{
+        color: $black-400;
+        background-color: $black-900;
+        .preview-heading-4{
+            color: $white;
+        }
+        &::backdrop{
+            background-color: $black-500;
+            opacity: 0.5;
+        }
+    }
+}
