@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/joeehis1/markdown-editor)
--   Live Site URL: [Add live site URL here](https://venerable-belekoy-9692bc.netlify.app/)
+-   Solution URL: [Markdown-Editor-Code](https://github.com/joeehis1/markdown-editor)
+-   Live Site URL: [Markdown-Editor-Deployed](https://venerable-belekoy-9692bc.netlify.app/)
 
 ## My process
 
