@@ -30,7 +30,7 @@ export default function MarkDownDisplay({ text }) {
         sectionRef.current.innerHTML = html;
     }, [text]);
 
-    return <div className="content" ref={sectionRef}></div>;
+    return <div id="preview" className="content" ref={sectionRef}></div>;
 }
 
 //

@@ -18,6 +18,7 @@ export default function TextEditor({ markdown, handleChange }) {
         >
             {isWider && <Heading title={"Editor"} />}
             <textarea
+                id="editor"
                 aria-label="Markdown Editor"
                 className="markdown-code"
                 value={markdown}
