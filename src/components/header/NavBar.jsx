@@ -11,7 +11,7 @@ const NavBar = forwardRef(({ logoLocation, navShown }, ref) => {
 
     return (
         <nav ref={ref} className={`docs-nav ${navShown ? "nav-shown" : ""}`}>
-            {logoLocation === "nav-bar" ? <Logo href="./" /> : ""}
+            {logoLocation === "nav-bar" ? <Logo /> : ""}
             <h2 className="nav-title app-heading-s">my documents</h2>
             <button
                 onClick={() => dispatch(addDoc())}

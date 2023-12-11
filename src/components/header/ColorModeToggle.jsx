@@ -22,7 +22,7 @@ export default function ColorModeToggle() {
                     selectedTheme === "light" ? "light" : ""
                 }`}
             >
-                <div className="circle"></div>
+                <span className="circle"></span>
             </button>
             <DarkModeIcon darkModeActive={selectedTheme === "dark"} />
         </div>

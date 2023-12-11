@@ -13,10 +13,11 @@ export default function Document({ createdAt, name, id }) {
             <button
                 onClick={() => select()}
                 className="btn btn-transparent btn-select"
+                title={`Click to view document "${name}"`}
             >
                 <img className="icon" src={documentIcon} alt="" />
-                <p className="created-at app-body-m">{createdAt}</p>
-                <h3 className="name app-heading-m">{name}</h3>
+                <span className="created-at app-body-m">{createdAt}</span>
+                <span className="name app-heading-m">{name}</span>
             </button>
         </li>
     );

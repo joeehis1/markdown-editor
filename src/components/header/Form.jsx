@@ -64,7 +64,6 @@ export default function Form({ docId }) {
                 handleSubmit();
             }}
             className="doc-name-editor"
-            action=""
         >
             <div className="doc-title">
                 <h2 className="doc-name app-body-m">Document Name</h2>
