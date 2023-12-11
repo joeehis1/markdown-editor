@@ -25,6 +25,7 @@ export default function MarkDownDisplay({ text }) {
         const converter = new Converter({
             extensions: [...bindings],
             tables: true,
+            simpleLineBreaks: true,
         });
 
         converter.setFlavor("github");
