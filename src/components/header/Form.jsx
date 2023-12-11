@@ -67,7 +67,7 @@ export default function Form({ docId }) {
             action=""
         >
             <div className="doc-title">
-                <h3 className="app-body-m">Document Name</h3>
+                <h2 className="doc-name app-body-m">Document Name</h2>
                 <img src={documentIcon} alt="" />
                 <label
                     onClick={(e) => {
@@ -98,6 +98,8 @@ export default function Form({ docId }) {
                 type="button"
                 onClick={() => openDialog()}
                 className="btn btn-transparent btn-icon btn-delete"
+                title={`Click to delete the selected document "${documentName}"`}
+                aria-label="Delete button"
             >
                 <img src={trashIcon} alt="" />
             </button>

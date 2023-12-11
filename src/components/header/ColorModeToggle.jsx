@@ -15,6 +15,8 @@ export default function ColorModeToggle() {
         <div className="color-mode-toggle">
             <LightModeIcon lightModeActive={selectedTheme === "light"} />
             <button
+                aria-label="Color theme toggle button"
+                title="Click to switch between light and dark mode"
                 onClick={() => toggleChange()}
                 className={`btn btn-dark-light ${
                     selectedTheme === "light" ? "light" : ""

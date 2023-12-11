@@ -44,7 +44,7 @@ header{
         "icon label";
     }
     
-    h3{
+    .doc-name{
         display: none;
 
         @media (min-width: $breakpoint-mobile) {
