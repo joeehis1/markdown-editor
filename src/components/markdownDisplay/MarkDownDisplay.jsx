@@ -24,6 +24,7 @@ export default function MarkDownDisplay({ text }) {
 
         const converter = new Converter({
             extensions: [...bindings],
+            tables: true,
         });
 
         const html = converter.makeHtml(text);
