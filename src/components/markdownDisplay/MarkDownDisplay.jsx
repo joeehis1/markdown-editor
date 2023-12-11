@@ -27,6 +27,8 @@ export default function MarkDownDisplay({ text }) {
             tables: true,
         });
 
+        converter.setFlavor("github");
+
         const html = converter.makeHtml(text);
         sectionRef.current.innerHTML = html;
     }, [text]);
