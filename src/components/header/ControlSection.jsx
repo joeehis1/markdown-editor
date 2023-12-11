@@ -18,11 +18,7 @@ export default function ControlSection({ logoLocation }) {
                 icon={navShown ? closeIcon : menuIcon}
                 handleClick={toggleNavShown}
             />
-            {logoLocation === "header" ? (
-                <Logo href="./" className="logo" />
-            ) : (
-                ""
-            )}
+            {logoLocation === "header" ? <Logo className="logo" /> : ""}
             <NameEditor />
         </section>
     );
