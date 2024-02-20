@@ -28,7 +28,7 @@ export default function MarkDownDisplay({ text }) {
             simpleLineBreaks: true,
         });
 
-        converter.setFlavor("github");
+        converter.setFlavor("allOn");
 
         const html = converter.makeHtml(text);
         sectionRef.current.innerHTML = html;
