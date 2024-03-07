@@ -3,12 +3,10 @@
 ## Table of contents
 
 -   [Overview](#overview)
-    -   [The challenge](#the-challenge)
     -   [Screenshot](#screenshot)
     -   [Links](#links)
 -   [Installation and Usage](#installation-and-usage)
 -   [Folder Structure](#folder-structure)
-
 -   [Future Enhancements](#author)
 -   [Contributions](#contributions)
 
