@@ -43,7 +43,7 @@ As an in-browser application, there is no installation required. Upon accessing 
 
 ## Future Enhancements
 
-In the future, I aim to transform the Markdown editor into a full-stack application using the Remix framework.
+Potential future enhancements include moving document storage to a backend for cross-device sync
 
 ## Contributions
 
